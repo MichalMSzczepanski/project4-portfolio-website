@@ -1,0 +1,11 @@
+﻿Hostinger
+
+ns1.dns-parking.com
+ns2.dns-parking.com
+
+
+godaddy
+
+ns41.domaincontrol.com
+ns42.domaincontrol.com
+

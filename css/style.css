@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: helvetica;
-  arial;
-  sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -138,13 +136,13 @@
   color: #aa3a3a;
   margin-bottom: 25px;
   position: relative;
-  animation: headline;
-  animation-duration: 2s;
+  /* animation: headline; */
+  /* animation-duration: 2s;
   animation-fill-mode: forwards;
-  opacity: 0%;
+  opacity: 0%; */
 }
 
-@keyframes headline {
+/* @keyframes headline {
   0% {
     opacity: 0%
   }
@@ -152,21 +150,20 @@
   100% {
     opacity: 100%
   }
-}
-
+} */
 .left p {
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 25px;
   position: relative;
-  animation: paragraph;
-  animation-duration: 3s;
+  /* animation: paragraph; */
+  /* animation-duration: 3s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
-  opacity: 0%;
+  opacity: 0%; */
 }
 
-@keyframes paragraph {
+/* @keyframes paragraph {
   0% {
     opacity: 0%
   }
@@ -174,8 +171,7 @@
   100% {
     opacity: 100%
   }
-}
-
+} */
 .main-buttons a {
   font-size: 20px;
   width: 9em;
@@ -188,14 +184,14 @@
   align-items: center;
   color: white;
   text-decoration: none;
-  animation: buttons;
-  animation-duration: 2s;
+  /* animation: buttons; */
+  /* animation-duration: 2s;
   animation-delay: 5s;
   animation-fill-mode: forwards;
-  opacity: 0%;
+  opacity: 0%; */
 }
 
-@keyframes buttons {
+/* @keyframes buttons {
   0% {
     opacity: 0%
   }
@@ -203,8 +199,7 @@
   100% {
     opacity: 100%
   }
-}
-
+} */
 .main-buttons a:hover {
   background-color: white;
   color: black;
@@ -695,6 +690,7 @@ footer {
 }
 
 /**MEDIA QUERIES BELOW 800PX**/
+
 @media only screen and (max-width: 800px) {
   .nav-button a {
     font-size: 15px;
@@ -772,7 +768,8 @@ footer {
 
   .gallery-right {
     height: auto;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .link-list {
@@ -814,5 +811,172 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+/**MEDIA QUERIES BELOW 800PX**/
+@media only screen and (max-width: 400px) {
+  #up {
+    height: 50px;
+    border-top: 1px solid #aa3a3a;
+  }
+
+  nav .social li {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-button {
+    margin-right: 0px;
+  }
+
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main p {
+    font-size: 12px;
+    margin: 3px 0;
+  }
+
+  .left h1 {
+    font-size: 35px;
+    color: #aa3a3a;
+    margin: 0px 0px;
+    position: relative;
+    position: relative;
+    top: -10px;
+  }
+
+  .main-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-buttons a {
+    font-size: 12px;
+    width: 9em;
+    height: 40px;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
+  .left {
+    height: 50vh;
+    margin-bottom: 0px;
+  }
+
+  .right {
+    height: 40vh;
+    margin-top: 0px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    top: -0px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overview-left, .overview-right {
+    height: auto;
+    width: 100%;
+  }
+
+  .overview-header {
+    padding: 0px 0px;
+    margin: 0px 0px;
+  }
+
+  .overview-header h1 {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-size: 80px;
+  }
+
+  .red {
+    font-size: 50px;
+    color: #aa3a3a;
+  }
+
+  #overview p {
+    font-size: 12px;
+    line-height: 1.3em;
+    padding-top: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .overview-icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .overview-icons i {
+    padding: 3px 0px;
+  }
+
+  #content-fm .content-header {
+    padding: 0px 0px;
+  }
+
+  #content-fm .gallery-right {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link-list {
+    height: 100px;
+  }
+
+  #content-agency .content-header {
+    padding: 0px 0px;
+  }
+
+  .gallery-right-agency {
+    margin-top: 0px;
+  }
+
+  #contact {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  form h2 {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footer-left {
+    margin-top: 15px;
+  }
+
+  .footer-center ul li {
+    padding: 0 10px 0 10px;
+  }
+
+  .footer-right {
+    margin-bottom: 15px;
   }
 }
